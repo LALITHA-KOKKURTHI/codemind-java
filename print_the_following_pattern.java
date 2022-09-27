@@ -3,24 +3,15 @@ class Patt
 {
     public static void main(String args[])
     {
-        int n,i,j;
         Scanner sc=new Scanner(System.in);
-        n=sc.nextInt();
-        for( i=1;i<=n;i++)
+        int n=sc.nextInt();
+        for(int i=n;i>=1;i--)
         {
-            for( j=1;j<=n;j++)
+            for(int j=1;j<=i;j++)
             {
-                if(j==1 || i==j || i==n)
-                {
-                    System.out.print("*");
-                }
-                else
-                {
-                    System.out.print(" ");
-                }
+                System.out.printf("%d",j);
             }
-            System.out.print("
-");
+            System.out.println();
         }
     }
 }
