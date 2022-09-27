@@ -10,13 +10,13 @@ class Patt
         {
             for(j=0;j<n;j++)
             {
-                if(i==j)
+                if(i==j || i+j==n-1)
                 {
-                    System.out.printf("0");
+                    System.out.printf("x");
                 }
                 else
                 {
-                    System.out.printf("x");
+                    System.out.printf("0");
                 }
                 
             }
